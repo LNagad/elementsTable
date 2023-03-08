@@ -23,12 +23,12 @@
 
                         {{#if (validator column 1)}}
                             {{#if (validator row 1)}}
-                            <td class="column">
-                                {{row}}
+                            <td class="column {{../element.group}}">
+                               {{../element.symbol}} 
                             </td>
                             {{else if (validator row 18)}}
-                            <td class="column">
-                                {{row}}
+                            <td class="column {{../../elementF.group}}">
+                               {{../../elementF.symbol}} 
                             </td>
                             {{else}}
                             <td class="columnX">

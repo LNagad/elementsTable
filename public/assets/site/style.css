@@ -3,10 +3,23 @@
     border: 2px solid #fff;
     width: 80px;
     height: 90px;
+    text-align: center;
 }
+
 .columnX {
     background-color: none;
     border: 2px solid #fff;
     width: 80px;
     height: 90px;
+}
+
+
+
+
+.Nonmetal {
+    background-color: #8db988;
+}
+
+.Noblegas {
+    background-color: #a9c9e6;
 }

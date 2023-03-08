@@ -1,5 +1,5 @@
 const express = require('express')
-
+const periodicTable = require('../helpers/elementsObject')
 const router = express.Router()
 
 const tableRows = []
@@ -16,13 +16,21 @@ function tableFill(times, obj) {
 tableFill(18, tableRows)
 tableFill(7, tableColumns)
 
+const elements = periodicTable.periodicTable
+
 router.get('/', (req, res, next) => {
+    
+    console.log(elements[1])
+    
 
     res.status(200).render('home', {
         layout: false, 
         title: 'Home page',
         tableRows: tableRows,
-        tableColumns: tableColumns
+        tableColumns: tableColumns,
+        element: elements[0],
+        elementF: elements[1],
+        elementsList: elements
     })
 })
 
