@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/site/style.css">
+</head>
+
+<body>
+    <h1 class="text-center">Home page</h1>
+    <main class="col-12">
+        <div class="col-10 offset-1 border border-3">
+            <table>
+                <tbody>
+                    {{#each tableColumns as |column|}}
+                    <tr class="rows">
+                        
+                        {{#each ../tableRows as |row|}}
+
+                        {{#if (validator column 1)}}
+                            {{#if (validator row 1)}}
+                            <td class="column">
+                                {{row}}
+                            </td>
+                            {{else if (validator row 18)}}
+                            <td class="column">
+                                {{row}}
+                            </td>
+                            {{else}}
+                            <td class="columnX">
+                            </td>
+                          
+                        {{/if}}
+
+                        {{else if (validator column 2)}}
+                            {{#if (validatorInverse row 1 2 18 17 16 15 14 13 )}}
+                            <td class="columnX">
+                            </td>
+                            {{else}}
+                            <td class="column">
+                            </td>
+                          
+                        {{/if}}
+                        {{else if (validator column 3)}}
+                            {{#if (validatorInverse row 1 2 18 17 16 15 14 13 )}}
+                            <td class="columnX">
+                            </td>
+                            {{else}}
+                            <td class="column">
+                            </td>
+                          
+                        {{/if}}
+                        
+                       
+                        {{else}}
+                        <td class="column">
+                        </td>
+                        {{/if}}
+
+                        {{/each}}
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
