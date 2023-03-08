@@ -361,7 +361,134 @@ const periodicTable = [
     symbol: "Og",
     group: "Noblegas",
   },
-
 ];
+
+const periodicTableBottom = [
+  {
+    symbol: "La",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Ce",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Pr",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Pr",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Nd",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Pm",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Sm",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Eu",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Gd",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Tb",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Dy",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Ho",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Er",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Tm",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Yb",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Lu",
+    group: "Lanthanide",
+  },
+  {
+    symbol: "Ac",
+    group: "Actinide",
+  },
+  {
+    symbol: "Th",
+    group: "Actinide",
+  },
+  {
+    symbol: "Pa",
+    group: "Actinide",
+  },
+  {
+    symbol: "U",
+    group: "Actinide",
+  },
+  {
+    symbol: "Np",
+    group: "Actinide",
+  },
+  {
+    symbol: "Pu",
+    group: "Actinide",
+  },
+  {
+    symbol: "Am",
+    group: "Actinide",
+  },
+  {
+    symbol: "Cm",
+    group: "Actinide",
+  },
+  {
+    symbol: "Bk",
+    group: "Actinide",
+  },
+  {
+    symbol: "Cf",
+    group: "Actinide",
+  },
+  {
+    symbol: "Es",
+    group: "Actinide",
+  },
+  {
+    symbol: "Fm",
+    group: "Actinide",
+  },
+  {
+    symbol: "Md",
+    group: "Actinide",
+  },
+  {
+    symbol: "No",
+    group: "Actinide",
+  },
+  {
+    symbol: "Lr",
+    group: "Actinide",
+  },
+];
+
 
 exports.periodicTable = periodicTable;
