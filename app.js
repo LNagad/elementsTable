@@ -4,7 +4,7 @@ const path = require("path");
 
 const homeRoute = require("./routes/homeRoute");
 const validatorHelper = require("./helpers/validatorHelper");
-const testHelper = require("./helpers/testHelper");
+const tableHelper = require("./helpers/tableHelper");
 
 const app = express();
 
@@ -14,12 +14,12 @@ app.engine(
     helpers: {
       validator: validatorHelper.validator,
       validatorInverse: validatorHelper.validatorInverse,
-      getElemento: testHelper.getElemento,
-      getElementoGroup: testHelper.getElementoGroup,
-      incrementCounter: testHelper.incrementCounter,
-      getSecElement: testHelper.getSecElement,
-      getSecElementGroup: testHelper.getSecElementGroup,
-      secIncrementCounter: testHelper.secIncrementCounter
+      getElemento: tableHelper.getElemento,
+      getElementoGroup: tableHelper.getElementoGroup,
+      incrementCounter: tableHelper.incrementCounter,
+      getSecElement: tableHelper.getSecElement,
+      getSecElementGroup: tableHelper.getSecElementGroup,
+      secIncrementCounter: tableHelper.secIncrementCounter
     },
   })
 );
