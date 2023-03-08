@@ -18,10 +18,8 @@ tableFill(7, tableColumns)
 
 const elements = periodicTable.periodicTable
 
+
 router.get('/', (req, res, next) => {
-    
-    console.log(elements[1])
-    
 
     res.status(200).render('home', {
         layout: false, 
@@ -30,7 +28,7 @@ router.get('/', (req, res, next) => {
         tableColumns: tableColumns,
         element: elements[0],
         elementF: elements[1],
-        elementsList: elements
+
     })
 })
 

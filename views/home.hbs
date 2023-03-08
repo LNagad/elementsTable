@@ -16,54 +16,65 @@
         <div class="col-10 offset-1 border border-3">
             <table>
                 <tbody>
+                    
                     {{#each tableColumns as |column|}}
                     <tr class="rows">
-                        
+
                         {{#each ../tableRows as |row|}}
 
                         {{#if (validator column 1)}}
                             {{#if (validator row 1)}}
-                            <td class="column {{../element.group}}">
-                               {{../element.symbol}} 
-                            </td>
-                            {{else if (validator row 18)}}
+                                <td class="column {{../element.group}}">
+                                    {{../element.symbol}}
+                                </td>
+                        {{else if (validator row 18)}}
                             <td class="column {{../../elementF.group}}">
-                               {{../../elementF.symbol}} 
+                                {{../../elementF.symbol}}
                             </td>
-                            {{else}}
+                        {{else}}
                             <td class="columnX">
                             </td>
-                          
                         {{/if}}
 
                         {{else if (validator column 2)}}
                             {{#if (validatorInverse row 1 2 18 17 16 15 14 13 )}}
+                            
                             <td class="columnX">
                             </td>
-                            {{else}}
-                            <td class="column">
-                            </td>
-                          
+
+                        {{else}}
+                        
+                        <td class="column {{getElementoGroup}}">
+                            {{getElemento}}
+                            {{incrementCounter}}
+                        </td>
+                        
                         {{/if}}
                         {{else if (validator column 3)}}
-                            {{#if (validatorInverse row 1 2 18 17 16 15 14 13 )}}
-                            <td class="columnX">
-                            </td>
-                            {{else}}
-                            <td class="column">
-                            </td>
-                          
-                        {{/if}}
-                        
-                       
+                        {{#if (validatorInverse row 1 2 18 17 16 15 14 13 )}}
+                        <td class="columnX">
+                        </td>
                         {{else}}
-                        <td class="column">
+                       <td class="column {{getElementoGroup}}">
+                            {{getElemento}}
+                                    {{incrementCounter}}
+                        </td>
+
+                        {{/if}}
+
+
+                        {{else}}
+                       <td class="column {{getElementoGroup}}">
+                            {{getElemento}}
+                                    {{incrementCounter}}
                         </td>
                         {{/if}}
 
                         {{/each}}
                     </tr>
+
                     {{/each}}
+
                 </tbody>
             </table>
         </div>

@@ -4,6 +4,7 @@ const path = require("path");
 
 const homeRoute = require("./routes/homeRoute");
 const validatorHelper = require("./helpers/validatorHelper");
+const testHelper = require("./helpers/testHelper");
 
 const app = express();
 
@@ -12,7 +13,10 @@ app.engine(
   engine({
     helpers: {
       validator: validatorHelper.validator,
-      validatorInverse: validatorHelper.validatorInverse
+      validatorInverse: validatorHelper.validatorInverse,
+      getElemento: testHelper.getElemento,
+      getElementoGroup: testHelper.getElementoGroup,
+      incrementCounter: testHelper.incrementCounter
     },
   })
 );
