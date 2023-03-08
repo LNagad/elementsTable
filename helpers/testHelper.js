@@ -1,8 +1,11 @@
-const periodicTable = require('../helpers/elementsObject')
+const periodicTableHelper = require('../helpers/elementsObject')
 
-const elements = periodicTable.periodicTable
+const elements = periodicTableHelper.periodicTable
+const elementSecond = periodicTableHelper.periodicTableBottom
+
 
 let counter = 2
+let counter2nd = 0
 
 const elementoSymbol = () => {
     const elementS = elements[counter].symbol
@@ -24,6 +27,26 @@ const incrementCounter = () => {
     }
 }
 
+
+const secElementSymbol = () =>  {
+    return elementSecond[counter2nd].symbol
+}
+const secElementGroup = () => {
+    return elementSecond[counter2nd].group
+}
+
+const secIncrementCounter = () => {
+    if (counter2nd === 29) {
+        counter2nd = 0
+    } else {
+        counter2nd++
+    }
+}
+
 exports.getElemento = elementoSymbol
 exports.getElementoGroup = elementoGroup
 exports.incrementCounter = incrementCounter
+
+exports.getSecElement = secElementSymbol
+exports.getSecElementGroup = secElementGroup
+exports.secIncrementCounter = secIncrementCounter

@@ -16,7 +16,10 @@ app.engine(
       validatorInverse: validatorHelper.validatorInverse,
       getElemento: testHelper.getElemento,
       getElementoGroup: testHelper.getElementoGroup,
-      incrementCounter: testHelper.incrementCounter
+      incrementCounter: testHelper.incrementCounter,
+      getSecElement: testHelper.getSecElement,
+      getSecElementGroup: testHelper.getSecElementGroup,
+      secIncrementCounter: testHelper.secIncrementCounter
     },
   })
 );

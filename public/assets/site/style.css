@@ -1,18 +1,74 @@
+.ContentMain{
+    min-width: 1080px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #cdf1ff;
+}
+h1{
+    color: #3e91df;
+}
 .column {
     background-color: gray;
     border: 2px solid #fff;
     width: 80px;
-    height: 90px;
+    height: 40px;
     text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}.column2 {
+    width: 59px;
+    height: 60px;
+}
+
+.block {
+    box-sizing: border-box;
+    width: 150px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.block2 {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #fff;
 }
 
 .columnX {
     background-color: none;
-    border: 2px solid #fff;
     width: 80px;
     height: 90px;
 }
 
+.topBorder {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.metals{
+    background-color: rgb(188, 187, 187);
+    width: 57%;
+}
+.noMetals{
+    background-color: rgb(188, 187, 187);
+    width: 32%;
+}
+
+.metaloide {
+    position: relative;
+    height: 95px;
+    top: -1.6rem;
+}
 
 .Nonmetal {
     background-color: #8db988;

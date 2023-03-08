@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,76 +8,94 @@
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/site/style.css">
 </head>
-
 <body>
-    <h1 class="text-center">Home page</h1>
-    <main class="col-12">
-        <div class="col-10 offset-1 border border-3">
+    <h1 class="mt-4 text-center">Tabla Periodica de los elementos</h1>
+    <main class="col-10 offset-1 ContentMain">
+        <div class="col-10 offset-1 ">
             <table>
                 <tbody>
-                    
                     {{#each tableColumns as |column|}}
                     <tr class="rows">
-
                         {{#each ../tableRows as |row|}}
-
                         {{#if (validator column 1)}}
-                            {{#if (validator row 1)}}
-                                <td class="column {{../element.group}}">
-                                    {{../element.symbol}}
-                                </td>
+                        {{#if (validator row 1)}}
+                        <td class="column {{../element.group}}">
+                            {{../element.symbol}}
+                        </td>
                         {{else if (validator row 18)}}
-                            <td class="column {{../../elementF.group}}">
-                                {{../../elementF.symbol}}
-                            </td>
+                        <td class="column {{../../elementF.group}}">
+                            {{../../elementF.symbol}}
+                        </td>
                         {{else}}
-                            <td class="columnX">
-                            </td>
+                        <td class="columnX">
+                        </td>
                         {{/if}}
-
                         {{else if (validator column 2)}}
-                            {{#if (validatorInverse row 1 2 18 17 16 15 14 13 )}}
-                            
-                            <td class="columnX">
-                            </td>
-
+                        {{#if (validatorInverse row 1 2 18 17 16 15 14 13 )}}
+                        <td class="columnX">
+                        </td>
                         {{else}}
-                        
                         <td class="column {{getElementoGroup}}">
                             {{getElemento}}
                             {{incrementCounter}}
                         </td>
-                        
                         {{/if}}
                         {{else if (validator column 3)}}
                         {{#if (validatorInverse row 1 2 18 17 16 15 14 13 )}}
                         <td class="columnX">
                         </td>
                         {{else}}
-                       <td class="column {{getElementoGroup}}">
+                        <td class="column {{getElementoGroup}}">
                             {{getElemento}}
-                                    {{incrementCounter}}
+                            {{incrementCounter}}
                         </td>
-
                         {{/if}}
-
-
                         {{else}}
-                       <td class="column {{getElementoGroup}}">
+                        <td class="column {{getElementoGroup}}">
                             {{getElemento}}
-                                    {{incrementCounter}}
+                            {{incrementCounter}}
                         </td>
                         {{/if}}
-
                         {{/each}}
                     </tr>
-
                     {{/each}}
-
                 </tbody>
             </table>
+            <table class="mt-4 float-end mb-4">
+                <tbody>
+                    {{#each tableRows2 as |row|}}
+                    <tr class="rows">
+                        {{#each ../tableColumns2 as |col|}}
+                        <td class="column column2 {{getSecElementGroup}}">
+                            {{getSecElement}}
+                            {{secIncrementCounter}}
+                        </td>
+                        {{/each}}
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            <div class="w-100 mt-4">
+                <div class="w-100 topBorder">
+                    <div class="metals">Metales</div>
+                    <div class="noMetals float-end">No Metales</div>
+                </div>
+                <div class="d-flex ">
+                    <div class="block Alkalimetal">Alcalinos</div>
+                    <div class="block Alkalineearthmetal">Alcalinoterreos</div>
+                    <div class="block Transitionmetal">Metales de transicion / Bloque D</div>
+                    <div class="block  flex-column">
+                        <div class="block2 Lanthanide">Lantanidos</div>
+                        <div class="block2 Actinide">Actinidos</div>
+                    </div>
+                    <div class="block Post-transitionmetal">Otros Metales</div>
+                    <div class="block Metalloid metaloide">Metaloides</div>
+                    <div class="block Nonmetal">Otros no Metales</div>
+                    <div class="block Halogen">Halogenos</div>
+                    <div class="block Noblegas">Gases nobles</div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
-
 </html>
