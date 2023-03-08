@@ -226,63 +226,7 @@ const periodicTable = [
     group: "Alkalineearthmetal",
   },
   {
-    symbol: "La",
-    group: "Lanthanide",
-  },
-  {
-    symbol: "Ce",
-    group: "Lanthanide",
-  },
-  {
-    symbol: "Pr",
-    group: "Lanthanide",
-  },
-  {
-    symbol: "Nd",
-    group: "Lanthanide",
-  },
-  {
-    symbol: "Pm",
-    group: "Lanthanide",
-  },
-  {
-    symbol: "Sm",
-    group: "Lanthanide",
-  },
-  {
-    symbol: "Eu",
-    group: "Lanthanide",
-  },
-  {
-    symbol: "Gd",
-    group: "Lanthanide",
-  },
-  {
-    symbol: "Tb",
-    group: "Lanthanide",
-  },
-  {
-    symbol: "Dy",
-    group: "Lanthanide",
-  },
-  {
-    symbol: "Ho",
-    group: "Lanthanide",
-  },
-  {
-    symbol: "Er",
-    group: "Lanthanide",
-  },
-  {
-    symbol: "Tm",
-    group: "Lanthanide",
-  },
-  {
-    symbol: "Yb",
-    group: "Lanthanide",
-  },
-  {
-    symbol: "Lu",
+    symbol: "La-Lu",
     group: "Lanthanide",
   },
   {
@@ -334,59 +278,27 @@ const periodicTable = [
     group: "Post-transitionmetal",
   },
   {
-    symbol: "Th",
-    group: "Actinide",
+    symbol: "Po",
+    group: "Metalloid",
   },
   {
-    symbol: "Pa",
-    group: "Actinide",
+    symbol: "At",
+    group: "Halogen",
   },
   {
-    symbol: "U",
-    group: "Actinide",
+    symbol: "Rn",
+    group: "Noblegas",
   },
   {
-    symbol: "Np",
-    group: "Actinide",
+    symbol: "Fr",
+    group: "Alkalimetal",
   },
   {
-    symbol: "Pu",
-    group: "Actinide",
+    symbol: "Ra",
+    group: "Alkalineearthmetal",
   },
   {
-    symbol: "Am",
-    group: "Actinide",
-  },
-  {
-    symbol: "Cm",
-    group: "Actinide",
-  },
-  {
-    symbol: "Bk",
-    group: "Actinide",
-  },
-  {
-    symbol: "Cf",
-    group: "Actinide",
-  },
-  {
-    symbol: "Es",
-    group: "Actinide",
-  },
-  {
-    symbol: "Fm",
-    group: "Actinide",
-  },
-  {
-    symbol: "Md",
-    group: "Actinide",
-  },
-  {
-    symbol: "No",
-    group: "Actinide",
-  },
-  {
-    symbol: "Lr",
+    symbol: "Ac-Lr",
     group: "Actinide",
   },
   {
@@ -411,15 +323,15 @@ const periodicTable = [
   },
   {
     symbol: "Mt",
-    group: "Unknown",
+    group: "Transitionmetal",
   },
   {
     symbol: "Ds",
-    group: "Unknown",
+    group: "Transitionmetal",
   },
   {
     symbol: "Rg",
-    group: "Unknown",
+    group: "Transitionmetal",
   },
   {
     symbol: "Cn",
@@ -427,16 +339,29 @@ const periodicTable = [
   },
   {
     symbol: "Nh",
-    group: "Unknown",
+    group: "Post-transitionmetal",
   },
   {
     symbol: "Fl",
-    group: "Unknown",
+    group: "Post-transitionmetal",
   },
-  { symbol: "Mc", group: "Unknown" },
-  { symbol: "Lv", group: "Unknown" },
-  { symbol: "Ts", group: "Unknown" },
-  { symbol: "Og", group: "Unknown" },
+  {
+    symbol: "Mc",
+    group: "Post-transitionmetal",
+  },
+  {
+    symbol: "Lv",
+    group: "Post-transitionmetal",
+  },
+  {
+    symbol: "Ts",
+    group: "Halogen",
+  },
+  {
+    symbol: "Og",
+    group: "Noblegas",
+  },
+
 ];
 
 exports.periodicTable = periodicTable;
